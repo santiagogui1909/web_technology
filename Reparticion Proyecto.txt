@@ -1,0 +1,28 @@
+
+Fernanda: 
+
+-> Inicio
+-> Comentarios - Funcionalidad: Poder publicar un comentario
+
+
+Anny:
+
+-> Promociones - Funcionalidad: Alertas emergentes de promociones (Opcional)
+-> Formulario Nuevo Usuario - Funcionalidad: Poder crear nuevos usuarios
+
+Jaime:
+
+-> Servicios - Funcionalidad: Poder ordenar de mayor a menor o al reves (opcional)
+-> Formulario Nuevo Servicio - Funcionalidad: Poder crear nuevas tarjetas
+
+
+Santiago
+
+-> Menu - Funcionalidad: Redireccion a paginas y submenu de formularios
+-> Inicio de sesion - Funcionalidad: Poder iniciar sesion
+-> Crear Cuenta - Funcionalidad: Poder crear una cuenta
+
+Miguel
+
+-> Contacto - Funcionalidad: Simulador de envio de correo (opcional)
+-> Footer

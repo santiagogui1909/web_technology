@@ -1,6 +1,10 @@
 
-body{
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    margin: 0px;
-    padding: 0px;
+.containerLogin{
+
+}
+
+.boxLogo img{
+    height: 250px;
+    width: 250px;
+    border-radius: 100%;
 }
