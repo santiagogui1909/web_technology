@@ -1,0 +1,13 @@
+.card-servicio:hover{
+    transform: scale(1.05);
+}
+#btnNuevoProducto{
+    text-decoration: none;
+}
+#btnNuevoProducto:hover{
+    transform: scale(1.01);
+    border: solid 2px #0094c6 !important;
+    border-radius: 10px;
+    color: #fff !important;
+    background: #0094c6;
+}

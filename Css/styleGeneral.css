@@ -44,3 +44,12 @@ nav ul li{
 nav ul li:hover{
     color: #0094C6
 }
+
+.border-0094c6{
+    border: solid 2px #0094c6 !important;
+    border-radius: 10px;
+}
+
+.text-0094c6{
+    color: #0094c6 !important;
+}
