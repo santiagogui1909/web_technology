@@ -53,3 +53,15 @@ nav ul li:hover{
 .text-0094c6{
     color: #0094c6 !important;
 }
+
+.bg-0094c6{
+    background-color: #0094c6 !important;
+}
+
+.btn-shadow{
+    box-shadow: 3px 3px 6px gray !important;
+}
+
+.hover-scale:hover{
+    transform: scale(1.025) !important;
+}

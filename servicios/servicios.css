@@ -11,3 +11,7 @@
     color: #fff !important;
     background: #0094c6;
 }
+#btnCancelarAddServicio{
+    background: lightgrey !important;
+    color: rgb(107, 107, 107) !important;
+}
