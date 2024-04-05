@@ -1,0 +1,45 @@
+body {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.contenido {
+    line-height: 20px;
+    padding: 90px;
+    box-sizing: content-box;
+    position: absolute;
+    left: 600px;
+    
+}
+
+.boton_servicios {
+   padding: 10px 40px;
+   margin: 0px 10px;
+   color: aliceblue;
+   background-color: #005E7C;
+   border-radius: 10px;
+}
+
+.imagen {
+    padding: 40px;
+    box-sizing: content-box;
+    position: relative;
+    width: 34%;
+
+}
+
+.contenido2 { 
+    line-height: 25px;
+    padding: 90px;
+    box-sizing: content-box;
+    position: absolute;
+    top: 500px;
+
+}
+
+.boton_contacto { 
+    padding: 15px 80px;
+    margin: 0px 40%;
+    color: aliceblue;
+    background-color: #001242;
+    border-radius: 5px;
+}
