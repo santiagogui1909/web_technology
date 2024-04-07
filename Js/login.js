@@ -46,7 +46,7 @@ function iniciarSesion(userName,password){
             Swal.fire("¡Usuario no existe!");
         } else if (result[0].nombreUsuario == userName && result[0].contraseña == password) {
             Swal.fire({
-                position: "top-end",
+                position: "center",
                 icon: "success",
                 title: "Bienvenido " + userName,
                 showConfirmButton: false,

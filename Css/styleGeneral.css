@@ -61,3 +61,24 @@ nav ul li a {
 nav ul li a:hover {
     color: #0094C6
 }
+
+.border-0094c6{
+    border: solid 2px #0094c6 !important;
+    border-radius: 10px;
+}
+
+.text-0094c6{
+    color: #0094c6 !important;
+}
+
+.bg-0094c6{
+    background-color: #0094c6 !important;
+}
+
+.btn-shadow{
+    box-shadow: 3px 3px 6px gray !important;
+}
+
+.hover-scale:hover{
+    transform: scale(1.025) !important;
+}
