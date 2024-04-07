@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,17 +8,25 @@
     <link rel="stylesheet" href="./Css/styleGeneral.css"> <!-- Poner esta linea en cada pagina -->
     <title>Login</title>
 </head>
+
 <body>
 
     <section class="containerLogin">
         <article class="boxLogo">
-            <img src="./Assets/Images/Logo3.png" alt="logo" title="logo inicio sesion"/>
+            <img src="./Assets/Images/Logo3.png" alt="logo" title="logo inicio sesion" />
         </article>
 
-        <form>
-
+        <form id="loginForm">
+            <h2>Inicio Sesion</h2>
+            <input class="formInput" type="text" name="userName" placeholder="Nombre Usuario" required>
+            <input class="formInput" type="password" name="password" placeholder="Contraseña" required>
+            <input class="btnLogin" type="submit" value="iniciar Sesion">
+            <a class="enlaceCrearCuenta" href="crearCuenta.html">Crear Cuenta <span></span></a>
         </form>
     </section>
 
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="./Js/login.js"></script>
 </body>
+
 </html>
