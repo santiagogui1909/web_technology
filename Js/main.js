@@ -76,7 +76,7 @@ function llenarServicios(data = null) {
         rowServiciosDOM.innerHTML +=
             `<div class="col-md-3 ${((index) % 3 == 0) ? "" : "offset-md-1"} bg-white p-3 border-0094c6 mt-3 card-servicio">` +
             `<div class="col-md-12 mb-2 border-0094c6">` +
-            `<img src="../Assets/Images/${servicio.imagen}" alt="" srcset="" width="256" height="256">` +
+            `<img src="./Assets/Images/${servicio.imagen}" alt="" srcset="" width="256" height="256">` +
             `</div>` +
             `<center>` +
             `<h3 class="text-0094c6">$${new Intl.NumberFormat().format(servicio.precio)}</h3>` +
