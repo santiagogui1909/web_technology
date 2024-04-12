@@ -1,0 +1,63 @@
+body { 
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+h1 {
+    text-align: center;
+    padding: 40px;
+}
+
+.comentario_1 {
+    height: 130px;
+    margin: 60px;
+    background-color: #005E7C;
+    border-radius: 10px;
+    color: white;
+}
+
+.comentario_2 {
+    height: 130px;
+    margin: 60px;
+    background-color: #005E7C;
+    border-radius: 10px;
+    color: white;
+}
+
+.comentario_3 {
+    height: 130px;
+    margin: 60px;
+    background-color: #005E7C;
+    border-radius: 10px;
+    color: white;
+}
+
+h3 {
+    padding: 15px;
+}
+
+h4 { 
+    padding: 10px;
+}
+
+h5 { 
+    margin-left: 85%;
+}
+
+
+.mensaje { 
+    position: relative;
+    padding: 10px;
+    margin: 90px;
+    width: 87%;
+    background-color: whitesmoke;
+    border: solid #005E7C;
+}
+
+.boton_enviar {
+    position: relative;
+    margin: 0 0 20px 45%;
+    padding: 15px 80px;
+    background-color: #0094C6;
+    border-radius: 5px;
+}
+
