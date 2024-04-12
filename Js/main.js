@@ -10,6 +10,20 @@ document.addEventListener('DOMContentLoaded', function() {
 
 });
 
+// Menu 
+
+function showSubMenu() {    
+
+    let subMenuContainer = document.querySelector('.subMenuContainer');
+
+    if (subMenuContainer.style.display === 'none' || subMenuContainer.style.display === '') {
+        subMenuContainer.style.display = 'inline-block';
+    } else {
+        subMenuContainer.style.display = 'none';
+    }
+}
+
+
 /**Json servicios */
 let servicios = [
     {
@@ -155,4 +169,12 @@ function validarCampos(nombre, precio, descripcion){
     if(!valid)
     alert(mensajeError);
     return valid;
+}
+
+
+// Cerrar Sesion
+
+function closeSesion() {
+    localStorage.removeItem("loginUser");
+    window.location.assign('index.html');
 }

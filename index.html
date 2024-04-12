@@ -6,22 +6,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./Css/index.css">
     <link rel="stylesheet" href="./Css/styleGeneral.css"> <!-- Poner esta linea en cada pagina -->
+    <link rel="stylesheet" href="fontello/css/fontello.css">
     <title>Login</title>
 </head>
 
 <body>
-
     <section class="containerLogin">
         <article class="boxLogo">
             <img src="./Assets/Images/Logo3.png" alt="logo" title="logo inicio sesion" />
         </article>
 
         <form id="loginForm">
-            <h2>Inicio Sesion</h2>
+            <h2 class="loginTitle">Inicio Sesion</h2>
             <input class="formInput" type="text" name="userName" placeholder="Nombre Usuario" required>
             <input class="formInput" type="password" name="password" placeholder="Contraseña" required>
+            <input class="formInputCreate" type="hidden" value="1" name="tipo">
             <input class="btnLogin" type="submit" value="iniciar Sesion">
-            <a class="enlaceCrearCuenta" href="crearCuenta.html">Crear Cuenta <span></span></a>
+            <a class="enlaceCrearCuenta" href="crearCuenta.html">Crear Cuenta <span class="icon-right-open"></span></a>
         </form>
     </section>
 

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./Css/index.css">
+    <link rel="stylesheet" href="./Css/styleGeneral.css"> <!-- Poner esta linea en cada pagina -->
+    <link rel="stylesheet" href="fontello/css/fontello.css">
+    <link rel="icon" href="./Assets/Images/Logo.png">
+    <title>Login</title>
+</head>
+
+<body>
+
+    <section class="containerCreateCount">
+        <h2 class="createCountTitle">Nueva Cuenta</h2>
+        <form id="loginForm" class="createCountForm">
+            <article>
+                <input class="formInputCreate" type="text" name="nombre" placeholder="Nombre y Apellido" required>
+                <input class="formInputCreate" type="text" name="userName" placeholder="Nombre Usuario" required>
+                <input class="formInputCreate" type="password" name="password" placeholder="Contraseña" required>
+                <input class="formInputCreate" type="password" name="confirmpassword" placeholder="Confirmar Contraseña" required>
+                <input class="formInputCreate" type="hidden" value="2" name="tipo">
+            </article>
+            <input class="btnCreateCount" type="submit" value="Crear Cuenta">
+        </form>
+        <a class="enlacelogin" href="index.html">Iniciar Sesion<span class="icon-right-open"></span></a>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="./Js/login.js"></script>
+</body>
+
+</html>

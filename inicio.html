@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="./Css/normalize.css">
     <link rel="stylesheet" href="./Css/inicio.css">
     <link rel="stylesheet" href="./Css/styleGeneral.css">
+    <link rel="stylesheet" href="fontello/css/fontello.css">
     <link rel="icon" href="./Assets/Images/Logo.png">
     <title>Inicio</title>
 
@@ -23,7 +24,15 @@
                 <li><a href="">Promociones</a></li>
                 <li><a href="">comentarios</a></li>
                 <li><a href="">contacto</a></li>
-                <li><a href="index.html"><span>User</span></a></li>
+                <li class="subMenu"><span class="icon-user-circle-o" onmousedown="showSubMenu()"></span>
+                    <section class="subMenuContainer">
+                        <ul>
+                            <li><a href="agregarServicio.html">Registrar / Editar Servicio</a></li>
+                            <li><a href="FormularioNuevoUsuario.html">Registrar / Editar Usuario</a></li>
+                            <li><a onclick="closeSesion()">Cerrar Sesion</a></li>
+                        </ul>
+                    </section>
+                </li>
             </ul>
         </nav>
     </section>

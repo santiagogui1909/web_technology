@@ -62,6 +62,43 @@ nav ul li a:hover {
     color: #0094C6
 }
 
+.subMenu{
+    font-size: 1.6rem;
+    cursor: pointer;
+}
+
+.subMenu .subMenuContainer {
+    display: none;
+    position: absolute;
+    top: 80px;
+    right: 40px;
+    z-index: 1000;
+}
+
+.subMenu .subMenuContainer ul{
+    background-color: #ffffff;
+    box-shadow: 0px 0px 10px #000000;
+    border-radius: 10px;
+    display: grid;
+    grid-template-columns: 1fr;
+    text-align: center;
+}
+
+.subMenu .subMenuContainer ul li{
+    border-bottom: 1px solid #0094c6;
+    cursor: pointer;
+    padding: 5px 20px;
+}
+
+.subMenu .subMenuContainer ul li a{
+    font-size: 0.900rem;
+    width: 200px;
+}
+
+.subMenu .subMenuContainer ul li a:hover{
+    color: #0094c6;
+}
+
 .border-0094c6{
     border: solid 2px #0094c6 !important;
     border-radius: 10px;
