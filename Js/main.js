@@ -171,7 +171,6 @@ function validarCampos(nombre, precio, descripcion){
     return valid;
 }
 
-
 // Cerrar Sesion
 
 function closeSesion() {
