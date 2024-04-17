@@ -1,6 +1,12 @@
 .card-servicio:hover{
     transform: scale(1.05);
 }
+
+#btnNewService{
+    display: none;
+    text-align: right;
+}
+
 #btnNuevoProducto{
     text-decoration: none;
 }

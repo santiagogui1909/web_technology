@@ -5,9 +5,14 @@ let contenedorComentarios = document.querySelector(".comentarios");
 document.addEventListener('DOMContentLoaded', function() {
 
     let sesionData = localStorage.getItem('loginUser');
+    const usuarios = JSON.parse(sesionData);
 
     if(sesionData == null) {
         window.location.assign('index.html');
+    }
+
+    if (usuarios[0].tipoUsuario == 1) {
+        document.getElementById('btnNewService').style.display = 'block';
     }
 
 });
@@ -197,7 +202,7 @@ function capturarComentario(){
         <h4>${mensaje}</h4>
         <h5>Fecha Comentario ${fecha.getFullYear()}-${fecha.getMonth()}-${fecha.getDay()}</h5>
     </div>`
-    
+
     Swal.fire("¡Comentario publicado de manera correcta!");
     contenedorComentarios.innerHTML += cuerpo;
 }
