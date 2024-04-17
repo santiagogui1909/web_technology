@@ -1,34 +1,23 @@
-body { 
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-}
 
 h1 {
     text-align: center;
     padding: 40px;
 }
 
-.comentario_1 {
-    height: 130px;
-    margin: 60px;
-    background-color: #005E7C;
-    border-radius: 10px;
-    color: white;
+.comentarios{
+    background: #ffffff;
+    padding: 20px 10px;
+    margin: 10px;
 }
 
-.comentario_2 {
-    height: 130px;
+.comentarioCard {
+    height: auto;
     margin: 60px;
     background-color: #005E7C;
     border-radius: 10px;
+    box-shadow: 6px 6px 10px #000000;
     color: white;
-}
-
-.comentario_3 {
-    height: 130px;
-    margin: 60px;
-    background-color: #005E7C;
-    border-radius: 10px;
-    color: white;
+    padding: 20px 10px;
 }
 
 h3 {
@@ -43,21 +32,31 @@ h5 {
     margin-left: 85%;
 }
 
-
 .mensaje { 
-    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 20px 40px;
     padding: 10px;
-    margin: 90px;
-    width: 87%;
-    background-color: whitesmoke;
-    border: solid #005E7C;
 }
 
+.mensaje textarea{
+    border: 1px solid #464646;
+    background: #ffffff;
+    border-radius: 10px;
+    padding: 10px;
+    height: 50px;
+    width: 600px;
+} 
+
 .boton_enviar {
-    position: relative;
-    margin: 0 0 20px 45%;
+    color: #ffffff;
+    cursor: pointer;
     padding: 15px 80px;
     background-color: #0094C6;
     border-radius: 5px;
+    border: none;
+    box-shadow: 6px 6px 0px #000000;
+    width: 400px;
 }
 

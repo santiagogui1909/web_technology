@@ -4,8 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./Css/normalize.css">
-    <link rel="stylesheet" href="./Css/inicio.css">
+    <link rel="stylesheet" href="./Css/contacto.css">
     <link rel="stylesheet" href="./Css/styleGeneral.css">
     <link rel="stylesheet" href="fontello/css/fontello.css">
     <link rel="icon" href="./Assets/Images/Logo.png">
@@ -19,85 +18,49 @@
 
         <nav>
             <ul>
-                <li><a href="inicio.html">inicio</a></li>
+                <li><a href="inicio.html">Inicio</a></li>
                 <li><a href="servicios.html">servicios</a></li>
-                <li><a href="">Promociones</a></li>
+                <li><a href="Promociones.html">Promociones</a></li>
                 <li><a href="comentarios.html">comentarios</a></li>
-                <li><a href="">contacto</a></li>
+                <li><a href="contacto.html">contacto</a></li>
                 <li class="subMenu"><span class="icon-user-circle-o" onmousedown="showSubMenu()"></span>
                     <section class="subMenuContainer">
-                        <ul>
-                            <li><a href="agregarServicio.html">Registrar / Editar Servicio</a></li>
-                            <li><a href="FormularioNuevoUsuario.html">Registrar / Editar Usuario</a></li>
-                            <li><a onclick="closeSesion()">Cerrar Sesion</a></li>
-                        </ul>
+                        <ul class="subMenuOptions"></ul>
                     </section>
                 </li>
             </ul>
         </nav>
     </section>
 
+    <div class="containerMenu">
+        <h2>Contáctenos</h2>
+        <form class="formContact">
+            <section>
+                <h3>Tipo de solicitud</h3>
+                <select>
+                    <option value="uno">Reclamo</option>
+                    <option value="dos">Peticion</option>
+                    <option value="tres">Queje</option>
+                    <option value="cuatro">Sugerencia</option>
+                </select>
+            </section>
+            <section>
+                <h3>Observaciones</h3>
+                <textarea placeholder="Ingresa tu comentario"></textarea>
+            </section>
+        </form>
+        <article class="btnContact">
+            <button>Enviar</button>
+        </article>
+    </div>
 
-    
-    
-    <main class="inicio">
-        <div class="box">
-            <div class="Tipo de solicitud"
-            
-              name="action">
-             <option value="uno">Reclamo</option>
-                <option value="dos">Peticion</option>
-                <option value="tres">Queje</option>
-                <option value="cuatro">Sugerencia</option>
-             </select>
-             </form>
-            </div>
-
-
-
-            <div class="Observaciones">
-            </div>
-
-    
-             <div class="Ubicacion"></div>
-
-
-             <div class="mb-3">
-                <h1>inserte el mensage aqui...</h1>
-                <label for="mensaje" class="form-label">Observaciones</label>
-                
-                <textarea class="form-control"id="mensaje"name="Observaciones"rows="3"requiret></textarea>
-                
-           </div>
-
-
-
-
-            <a href="#"><button class="boton_servicios">ENVIAR</button></a>
-
-        </div>
-
-
-    
-
-
-
-
-
-
-
-
-        <div class="imagen">
-            <img src="./Assets/Images/imagen_inicio.png">
-        </div>
-
-        <div class="contenido2">
-            <p>Ubicacion</p>
-         
-        </div>
-    </main>
-
+    <section class="sectionMaps">
+        <h3>Ubicación</h3>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d127245.0624755449!2d-74.0655104!3d4.6989312!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses!2sco!4v1713325840309!5m2!1ses!2sco" width="1000" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </section>
+        
     <script src="./Js/main.js"></script>
 
 </body>
+
 </html>

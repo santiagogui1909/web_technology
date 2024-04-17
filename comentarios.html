@@ -25,7 +25,7 @@
                 <li><a href="servicios.html">servicios</a></li>
                 <li><a href="Promociones.html">Promociones</a></li>
                 <li><a href="comentarios.html">comentarios</a></li>
-                <li><a href="">contacto</a></li>
+                <li><a href="contacto.html">contacto</a></li>
                 <li class="subMenu"><span class="icon-user-circle-o" onmousedown="showSubMenu()"></span>
                     <section class="subMenuContainer">
                         <ul class="subMenuOptions"></ul>
@@ -39,7 +39,7 @@
 
     <main>
         <div class="comentarios">
-            <div class="comentario_1">
+            <div class="comentarioCard">
                 <h3>MariaPerlita_20</h3>
                 <h4>¡Increíble trabajo! El diseño es genial y el contenido es justo lo que estaba buscando para expandir
                     mi negocio en línea. <br>
@@ -49,7 +49,7 @@
                 </h4>
                 <h5>Fecha Comentario 2024-02-22</h5>
             </div>
-            <div class="comentario_2">
+            <div class="comentarioCard">
                 <h3>Pedrog28</h3>
                 <h4>Después de analizar diferentes opciones, decidí invertir en una página web y ¡no podría estar más
                     feliz con mi elección!
@@ -60,7 +60,7 @@
                 </h4>
                 <h5>Fecha Comentario 2024-03-16</h5>
             </div>
-            <div class="comentario_3">
+            <div class="comentarioCard">
                 <h3>Carlitos_gr</h3>
                 <h4>El contenido existente es sólido y la base de usuarios es prometedora. Estoy ansioso por implementar
                     algunas mejoras y llevar mi negocio
@@ -73,10 +73,11 @@
         </div>
     </main>
 
-    <div>
-        <textarea class="mensaje" id="mensaje" cols="50" rows="20" placeholder="Escribe tu comentario"></textarea>
+    <div class="mensaje" >
+        <textarea id="mensaje" cols="50" rows="20" placeholder="Escribe tu comentario"></textarea>
         <button class="boton_enviar" onclick="capturarComentario()">ENVIAR</button>
     </div>
+    
 
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script src="./Js/main.js"></script>

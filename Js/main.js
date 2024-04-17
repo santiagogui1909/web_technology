@@ -197,7 +197,7 @@ function capturarComentario(){
 
     let fecha = new Date();
 
-    let cuerpo = `<div class="comentario_3">
+    let cuerpo = `<div class="comentarioCard">
         <h3>${usuario[0].nombreUsuario}</h3>
         <h4>${mensaje}</h4>
         <h5>Fecha Comentario ${fecha.getFullYear()}-${fecha.getMonth()}-${fecha.getDay()}</h5>
