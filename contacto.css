@@ -1,0 +1,101 @@
+ .boton_contacto{
+    font-size: 1rem;
+    line-height: 20px;
+    padding: 90px;
+    box-sizing: content-box;
+    position: absolute;
+    left: 600px;
+}
+
+.boton_servicios {
+   padding: 10px 40px;
+   margin: 0px 10px;
+   color: aliceblue;
+   cursor: pointer;
+   background-color:#001242;
+   border-radius: 10px;
+   border: none;
+}
+
+.imagen {
+    padding: 40px;
+    box-sizing: content-box;
+    position: relative;
+    top: 60px;
+    width: 80%;
+
+}
+
+.boton_contacto { 
+    line-height: 25px;
+    box-sizing: content-box;
+    margin: 120px 80px;
+    text-align: center;
+}
+
+.boton_contacto { 
+    padding: 15px 80px;
+    margin: 0px 40%;
+    color: aliceblue;
+    cursor: pointer;
+    background-color: #001242;
+    border-radius: 5px;
+    border: none;
+    margin: 20px;
+}
+
+.contenido { 
+    line-height: 25px;
+    box-sizing: content-box;
+    margin: 120px 80px;
+    text-align: center;
+}
+
+
+
+
+
+
+.form{    grid-area:form;
+
+}
+
+.Tipo_de_solicitud{
+    grid-area:Tipo de solicitub;
+    padding:40px;
+    background-color:#fff;
+
+}
+
+.Observaciones{
+    grid-area:Observaciones;
+    padding:40px;
+    background-color:#fff;
+    
+}
+
+
+.Ubicacion{
+    grid-area:Ubicacion;padding:40px;
+    background-color:#fff;
+    
+}
+
+.box{
+    position:relative;
+    display:grid ;
+    grid-template-columns:2fr 1fr;
+    grid-template-rows:5fr 4fr;
+    grid-template-areas:
+    "Tipo_de_solicitud"
+    "Ubicacion";
+    grid-gap:20px;
+    margin-top:20px;
+   
+}
+
+.Observaciones h1{
+color:#0e3959;
+font-weight:500;
+font-size:1.4em;
+}
