@@ -1,47 +1,80 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="UFT-8" />
-    <title>formulario de contactos</title>
-    <link rel="stylesheet" herf="estilos.css" />
-    <script
-   <head>https://maps.app.goo.gl/QG9ndp9MBMecPooj8; </head>
-      crossorigin="anonymous";
-    </script>
-  </head>
-  <body>
-    <dib class="container-form">
-      <div class="imfo-form">
-        <h1>COCTACTANOS</h1>
+<html lang="en">
 
-        <h2>TIPO DE SOLICITUD</h2>
-        <p>Petición</p>
-        <p>Queja</p>
-        <p>reclamo</p>
-        <p>sugerencia</p>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./Css/normalize.css">
+    <link rel="stylesheet" href="./Css/inicio.css">
+    <link rel="stylesheet" href="./Css/styleGeneral.css">
+    <link rel="stylesheet" href="fontello/css/fontello.css">
+    <link rel="icon" href="./Assets/Images/Logo.png">
+    <title>Inicio</title>
 
-        <h3>OBSERVACIONES</h3>
+</head>
 
-        <h4>UBICACIÓN</h4>
+<body>
+    <section class="headerMenu">
+        <img src="./Assets/Images/Logo2.png" alt="logo" title="logo Principal">
 
-        <a href="#"><i class="fa fa-phone"></i>31334256534</a>
+        <nav>
+            <ul>
+                <li><a href="inicio.html">contacto</a></li>
+                <li><a href="servicios.html">servicios</a></li>
+                <li><a href="">Promociones</a></li>
+                <li><a href="comentarios.html">comentarios</a></li>
+                <li><a href="">contacto</a></li>
+                <li class="subMenu"><span class="icon-user-circle-o" onmousedown="showSubMenu()"></span>
+                    <section class="subMenuContainer">
+                        <ul>
+                            <li><a href="agregarServicio.html">Registrar / Editar Servicio</a></li>
+                            <li><a href="FormularioNuevoUsuario.html">Registrar / Editar Usuario</a></li>
+                            <li><a onclick="closeSesion()">Cerrar Sesion</a></li>
+                        </ul>
+                    </section>
+                </li>
+            </ul>
+        </nav>
+    </section>
+    
+    <main class="inicio">
+        <div class="contenido">
+            <p>tipo de solicitud </p>
+            <section name="opcion">
+                <option vvalue="uno">Peticion</option>
+                <option vvalue="uno">Queje</option>
+                <option vvalue="uno">Reclamo</option>
+                <option vvalue="uno">Sujerencia</option>
 
-        <a href="#"><i class="fa fa map-marked"></i>carrera 1calle 85 # 23-40</a>
+            <a href="#"><button class="boton_servicios">ENVIAR</button></a>
 
-        <a href="#"><i class="fa fa-envelope"></i>WEBTECHNOLOGY@GMAIL.COM</a>
-      <div>
-      <form action="#" autocomplete="off">
-        <input
-          type="text"
-          name="nombre"
-          placeholder="ingrese su nombre"
-          class="campo"
+        </div>
 
 
-          <input type="email" name="email" placeholder="ingresa tu correo" class="campo">
-          <textarea name="mensaje" placeholder="ingrese su correo"></textarea>
-        <input type="submit" name="enviar" value="enviar mensaje" class="btn" />
-      </form>
+    <div class="mb-3">
+         <label for="mensaje" class="form-label">observaciones</label>
+         <textarea class="form-control"id="mensaje"name="observaciones"rows="3"requiret></textarea>
     </div>
+
+
+
+
+
+
+
+
+
+        <div class="imagen">
+            <img src="./Assets/Images/imagen_inicio.png">
+        </div>
+
+        <div class="contenido2">
+           
+            <a href="#"><button class="boton_contacto">CONTACTAR</button></a>
+        </div>
+    </main>
+
+    <script src="./Js/main.js"></script>
+
 </body>
 </html>
