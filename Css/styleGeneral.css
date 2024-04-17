@@ -119,3 +119,7 @@ nav ul li a:hover {
 .hover-scale:hover{
     transform: scale(1.025) !important;
 }
+
+.tachado{
+    text-decoration: line-through red;
+}

@@ -17,11 +17,22 @@ document.addEventListener('DOMContentLoaded', function() {
 function showSubMenu() {    
 
     let subMenuContainer = document.querySelector('.subMenuContainer');
+    let subMenuOptions = document.querySelector('.subMenuOptions');    
+    let datosUsuarios = localStorage.getItem('loginUser');
+    const usuarios = JSON.parse(datosUsuarios);
 
     if (subMenuContainer.style.display === 'none' || subMenuContainer.style.display === '') {
         subMenuContainer.style.display = 'inline-block';
     } else {
         subMenuContainer.style.display = 'none';
+    }
+
+    if(usuarios[0].tipoUsuario == 1) {
+        subMenuOptions.innerHTML = `<li><a href="agregarServicio.html">Registrar / Editar Servicio</a></li>
+        <li><a href="FormularioNuevoUsuario.html">Registrar / Editar Usuario</a></li>
+        <li><a onclick="closeSesion()">Cerrar Sesion</a></li>`;
+    } else {
+        subMenuOptions.innerHTML = `<li><a onclick="closeSesion()">Cerrar Sesion</a></li>`
     }
 }
 
@@ -177,15 +188,17 @@ function validarCampos(nombre, precio, descripcion){
 function capturarComentario(){
     let sesionData = localStorage.getItem('loginUser');
     let mensaje = document.getElementById('mensaje').value;
+    const usuario = JSON.parse(sesionData);
 
     let fecha = new Date();
 
     let cuerpo = `<div class="comentario_3">
-        <h3>${sesionData}</h3>
+        <h3>${usuario[0].nombreUsuario}</h3>
         <h4>${mensaje}</h4>
         <h5>Fecha Comentario ${fecha.getFullYear()}-${fecha.getMonth()}-${fecha.getDay()}</h5>
     </div>`
-
+    
+    Swal.fire("¡Comentario publicado de manera correcta!");
     contenedorComentarios.innerHTML += cuerpo;
 }
 

@@ -20,16 +20,12 @@
             <ul>
                 <li><a href="inicio.html">Inicio</a></li>
                 <li><a href="servicios.html">servicios</a></li>
-                <li><a href="">Promociones</a></li>
+                <li><a href="Promociones.html">Promociones</a></li>
                 <li><a href="comentarios.html">comentarios</a></li>
                 <li><a href="">contacto</a></li>
                 <li class="subMenu"><span class="icon-user-circle-o" onmousedown="showSubMenu()"></span>
                     <section class="subMenuContainer">
-                        <ul>
-                            <li><a href="agregarServicio.html">Registrar / Editar Servicio</a></li>
-                            <li><a href="FormularioNuevoUsuario.html">Registrar / Editar Usuario</a></li>
-                            <li><a onclick="closeSesion()">Cerrar Sesion</a></li>
-                        </ul>
+                        <ul class="subMenuOptions"></ul>
                     </section>
                 </li>
             </ul>
@@ -79,9 +75,7 @@
         <button class="boton_enviar" onclick="capturarComentario()">ENVIAR</button>
     </div>
 
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script src="./Js/main.js"></script>
-    <!-- <script src="./Js/comentarios.js"></script> -->
-
 </body>
-
 </html>

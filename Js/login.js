@@ -6,11 +6,13 @@ document.addEventListener('DOMContentLoaded', function () {
     const dataUsers = [{
         nombre: 'Administrador',
         nombreUsuario: 'Admin123',
-        contraseña: '123456'
+        contraseña: '123456',
+        tipo: 1,
     }, {
         nombre: 'Pedro Guzman',
         nombreUsuario: 'Cliente1',
-        contraseña: '123456-'
+        contraseña: '123456-',
+        tipo: 2,
     }];
 
     // Almacenar datos del usuario en localStorage
@@ -72,7 +74,13 @@ function iniciarSesion(userName, password) {
                 timer: 1500
             });
 
-            localStorage.setItem('loginUser', JSON.stringify(result[0].nombreUsuario));
+            let dataLogin = [{
+                nombreUsuario : result[0].nombreUsuario, 
+                tipoUsuario : result[0].tipo
+            }]
+
+
+            localStorage.setItem('loginUser', JSON.stringify(dataLogin));
 
             setTimeout(function () {
                 window.location.assign('inicio.html');
